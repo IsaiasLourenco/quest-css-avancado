@@ -5,9 +5,7 @@
     padding: 0;
 }
 
-html{
-    max-width: 1440px;
-    max-height: 800px;
-    background-color: hsl(257, 40%, 49%);
-    background-image: url('../images/bg-desktop.svg');
+html, body {
+    height: 100%;
+    overflow: hidden;
 }
