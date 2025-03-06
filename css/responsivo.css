@@ -2,71 +2,85 @@
 
     body {
         background-image: url('../images/bg-mobile.svg');
-        background-repeat: no-repeat;
-        min-height: 100vh;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
     }
 
     .container {
-        margin-left: 100px;
-        justify-content: center;
-        align-items: center;
-        top: 0;
-        
+        display: flex;
+        flex-direction: column;
+        margin-top: -100px;
     }
 
     .container header {
-        display: flex;
-        justify-content: center;
+        /* display: flex; */
+        justify-content: flex-start;
         align-items: center;
         width: 100%;
+        padding: 0;
     }
 
     .container header img {
-        height: 40px;
-        width: 100px;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        margin-left: 20px;
+        margin-left: -100px;
     }
 
     .container .hero {
-        flex-direction: column;
+        margin-left: -20px;
         align-items: center;
-        text-align: center;
+        flex-direction: column;
+        margin-top: -70px;
     }
 
+
     .container .hero img {
-        width: 100%;
-        max-width: 300px;
+        width: 80%;
+        margin-bottom: 20px;
+        padding: 20px;
+        width: 250px;
     }
 
     .container .hero .hero-text {
-        width: 80%;
-        max-width: 300px
+        width: 90%;
+        max-width: 400px;
+        text-align: center;
+        padding: 0 10px;
     }
 
     .container .hero .hero-text .title {
-        font-family: 'Poppins';
-        font-size: 24px;
-        font-weight: 600;
-        color: #FFF;
+        margin-top: -120px;
+        font-size: 20px;
+        margin-left: -35px;
+        align-items: center;
     }
 
     .container .hero .hero-text p {
-        /* margin-top: 20px; */
+        width: 180px;
+        padding: 10px;
+        margin-top: 10px;
         color: #fff;
         font-size: 12px;
+        align-items: center;
     }
 
     .container .hero .btn-register {
-        width: 180px;
+        width: 200px;
+        padding: 10px;
+        font-size: 16px;
+        margin-top: 10px;
+        align-items: center;
+        margin-left: -30px;
+    }
+
+        .container .hero .btn-register:hover {
+            color: hsl(300, 69%, 71%);
+            background-color: hsl(257, 40%, 49%);
+        }
+
+    .container .footer {
+        margin-left: -100px;
+        margin-top: -50px;
     }
 
     .container .footer .social-icons {
+        margin-top: 50px;
         position: relative;
         bottom: auto;
         right: auto;
@@ -75,7 +89,7 @@
         gap: 10px;
     }
 
-    .container .footer .social-icon a {
+    .container .footer .social-icon li {
         font-size: 10px;
         border: 1px solid #fff;
         width: 30px;
@@ -86,12 +100,20 @@
         border-radius: 50%;
         transition: all 0.3s ease;
         color: #FFFFFF;
+        margin-left: 10px;
     }
 
-    .container .footer .social-icon a:hover {
+    .container .footer .social-icon li:hover {
         color: hsl(300, 69%, 71%);
         background-color: hsl(257, 40%, 49%);
         border: 1px solid hsl(300, 69%, 71%);
+    }
+
+    .container .footer .attribution {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        margin-left: 30px;
     }
 
 }
